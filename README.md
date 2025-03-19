@@ -52,13 +52,12 @@ In this second part, you will use AWS EC2 to perform simple Python data analysis
 5. Connect to the instance using `ssh -i <key.pem> ubuntu@<public-ip>`
 6. Update and upgrade system packages with `apt`
 7. Install required packages: `python3` `python3-pandas`, `python3-matplotlib`, `python3-numpy`, and `python3-seaborn`
-8. From your terminal, upload the files `weather_data.py` and `weather_data.txt` to the EC2 instance using `scp -i <key.pem> <file> ubuntu@<public-ip>:~`
+8. From your local terminal, upload the files `weather_data.py` and `weather_data.txt` to the EC2 instance using `scp -i <key.pem> <file> ubuntu@<public-ip>:~` (note that the `:~` specifies the home directory of your instance)
 9. Run the script `weather_analysis.py` on the EC2 instance using Python
-10. Download the resulting PNG file to your local machine using `scp`
-11. Run the command `cat /etc/os-release > os.txt` and also download the `os.txt` file to your local machine
-12. Place `weather_analysis.png` and `os.txt` inside the `aws` directory in your repository
-13. **Terminate the EC2 instance** to avoid charges and **do not include the .pem file in your repository**. The `.pem` file is sensitive and should never be shared publicly
-14. Add, commit, and push your changes
-15. Submit your repository link on Canvas
+10. Run the command `cat /etc/os-release > os.txt` on the instance
+11. From your local terminal, download the `os.txt` and `weather_analysis.png` files to the `aws` directory on your machine (note the syntax: `scp -i <key.pem> <source> <destination>`)
+12. **Terminate the EC2 instance** to avoid charges and **do not include the .pem file in your repository**. The `.pem` file is sensitive and should never be shared publicly
+13. Add, commit, and push your changes
+14. Submit your repository link on Canvas
 
 **Good luck!** 😃
