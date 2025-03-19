@@ -50,7 +50,7 @@ In this second part, you will use AWS EC2 to perform simple Python data analysis
 3. Configure security groups to allow SSH, HTTPS and HTTP access
 4. Allocate at least 15GB disk space
 5. Connect to the instance using `ssh -i <key.pem> ubuntu@<public-ip>`
-6. Update system packages with `apt`
+6. Update and upgrade system packages with `apt`
 7. Install required packages: `python3` `python3-pandas`, `python3-matplotlib`, `python3-numpy`, and `python3-seaborn`
 8. From your terminal, upload the files `weather_data.py` and `weather_data.txt` to the EC2 instance using `scp -i <key.pem> <file> <user>@<ip>:<path>`
 9. Run the script `weather_analysis.py` on the EC2 instance using Python
