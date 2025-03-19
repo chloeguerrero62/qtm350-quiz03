@@ -52,7 +52,7 @@ In this second part, you will use AWS EC2 to perform simple Python data analysis
 5. Connect to the instance using `ssh -i <key.pem> ubuntu@<public-ip>`
 6. Update and upgrade system packages with `apt`
 7. Install required packages: `python3` `python3-pandas`, `python3-matplotlib`, `python3-numpy`, and `python3-seaborn`
-8. From your local terminal, upload the files `weather_data.py` and `weather_data.txt` to the EC2 instance using `scp -i <key.pem> <file> ubuntu@<public-ip>:~` (note that the `:~` specifies the home directory of your instance)
+8. From your local terminal, upload the files `weather_analysis.py` and `weather_data.txt` to the EC2 instance using `scp -i <key.pem> <file> ubuntu@<public-ip>:~` (note that the `:~` specifies the home directory of your instance)
 9. Run the script `weather_analysis.py` on the EC2 instance using Python
 10. Run the command `cat /etc/os-release > os.txt` on the instance
 11. From your local terminal, download the `os.txt` and `weather_analysis.png` files to the `aws` directory on your machine (note the syntax: `scp -i <key.pem> <source> <destination>`)
